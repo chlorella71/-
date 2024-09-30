@@ -50,6 +50,28 @@ for c in range(4):
     print()
 
 
+#실습
+matrix = [[3, 7, 9, 10],
+          [4, 2, 6, 11],
+          [8, 1, 5, 12]]
+
+#1. 모두 더하기
+print("모두 더하기: ")
+sum_matrix = 0
+for r in range(3):
+    for c in range(4):
+        sum_matrix += matrix[r][c]
+print(sum_matrix)
+
+
+#2. 모든 데이터를 1로 수정하기
+print('모든 데이터 1로 수정하기: ')
+for c in range(4):
+    for r in range(3):
+        matrix[r][c] = 1
+print(matrix)
+
+
 
 
 
