@@ -28,3 +28,5 @@ for sec in range(5, 0, -1):
 
 print(sorted(random.sample(nums, 6)))
 
+list
+
