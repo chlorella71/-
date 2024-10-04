@@ -9,7 +9,7 @@ BASE_URL = 'https://api.themoviedb.org/3/movie/'
 path = 'now_playing'
 
 infos = {'api_key': api_key,
-          'language:': 'ko-Kr'}
+          'language': 'ko-Kr'}
 
 response = requests.get(URL)
 # response = requests.get(BASE_URL+path, params=infos)

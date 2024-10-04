@@ -15,7 +15,7 @@ api_key = '049f6fcf28f01d62016557ff06626369'
 BASE_URL = 'https://api.themoviedb.org/3/movie/'
 path = 'now_playing'
 infos = {'api_key': api_key,
-          'language:': 'ko-Kr'}
+          'language': 'ko-Kr'}
 
 response = requests.get(BASE_URL+path, params=infos)
 data = response.json().get('results')
@@ -26,4 +26,4 @@ for movie in data:
     if movie['vote_average'] >= 7:
         result.append([movie['title'], movie['vote_average']])
 
-print(result)
+pprint.pprint(result)

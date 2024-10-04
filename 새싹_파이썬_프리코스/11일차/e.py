@@ -30,8 +30,12 @@ max_vote_average = 0
 max_vote_average_movie = None
 
 for movie in data:
-    if max_vote_average < movie['vote_average']:
-        print(movie['title'], movie['vote_average'])
+    if max_vote_average < movie['vote_average']: 
+        max_vote_average = movie['vote_average']
+        max_vote_average_movie = movie
+print(f'제목: {max_vote_average_movie['title']}, 평점: {max_vote_average_movie['vote_average']}')
+print(f'poster_path: {max_vote_average_movie['poster_path']}')
 
 # guide > images > basic
 # https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg
+# 위 url에서 조커의 poster_path로 변경
